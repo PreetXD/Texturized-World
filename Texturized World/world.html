@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment 4</title>
+</head>
+
+<body onload="main()">
+    <canvas id="webgl" width="1280" height="720">
+    Please use a browser that supports "canvas"
+    </canvas><br>
+    <p id="numdot"> XXX </p>
+    <br>
+    <button id="normalOn">Normal On</button>
+    <button id="normalOff">Normal Off</button>
+    <br>
+    <br>
+    <button id="lightOn">Light On</button>
+    <button id="lightOff">Light Off</button>
+    <br>
+    <br>
+    <label for="angleSlideHor">Horizontal Angle</label>
+    <input type="range" id="angleSlideHor" name="angleSlideHor" min="-180" value="0" max="180">
+    <br>
+    <label for="angleSlideVer">Vertical Angle: </label>
+    <input type="range" id="angleSlideVer" name="angleSlideVer" min="-180" value="0" max="180">
+    <br>
+    <br>
+    <label for="lightSlideX">Light X</label>
+    <input type="range" id="lightSlideX" name="lightSlideX" min="-250" value="0" max="250">
+    <label for="lightSlideY">Light Y</label>
+    <input type="range" id="lightSlideY" name="lightSlideY" min="-250" value="100" max="250">
+    <label for="lightSlideZ">Light Z</label>
+    <input type="range" id="lightSlideZ" name="lightSlideZ" min="-250" value="-200" max="250">
+    <br>
+    <br>
+    <input type="checkbox" id="sky" name="sky" value="sky">
+    <label for="sky">Go to Nebula</label><br>
+    <input type="checkbox" id="fly" name="fly" value="fly">
+    <label for="fly">Enable Fly Controls (space = up, ctrl = down)</label><br>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="world.js"></script>
+</body>
+
+</html>
